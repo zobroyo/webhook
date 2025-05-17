@@ -1,0 +1,131 @@
+/*  
+  Project by Zua  
+  https://github.com/thatziv/webhook  
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 40px 0 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14, 0 0 30px #39ff14;
+}
+
+#container {
+  background: rgba(30, 30, 30, 0.85);
+  margin: 0 auto 40px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  max-width: 480px;
+  box-shadow: 0 0 15px #39ff14aa;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #cdeac0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 2px solid #39ff14;
+  background: #111;
+  color: #b1ff8a;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus {
+  border-color: #2aff00;
+  box-shadow: 0 0 8px #2aff00;
+  background: #1a1a1a;
+  color: #d4ff8f;
+}
+
+#btn {
+  width: 100%;
+  padding: 18px;
+  background: #39ff14;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+  box-shadow: 0 0 12px #39ff14, 0 0 25px #39ff14;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+#btn:hover {
+  background: #2ecc00;
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #2ecc00, 0 0 35px #2ecc00;
+}
+
+#btn:active {
+  transform: scale(0.95);
+}
+
+#log {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #39ff14;
+  text-shadow: 0 0 8px #39ff14aa;
+  min-height: 24px;
+  user-select: none;
+}
+
+#footer {
+  padding: 12px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #9acd32;
+  font-size: 0.9rem;
+  text-align: center;
+  user-select: none;
+}
+
+#footer a {
+  color: #9acd32;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: #39ff14;
+  text-shadow: 0 0 6px #39ff14;
+}

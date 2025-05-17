@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discord Webhook Spammer</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+</head>
+<body>
+
+  <div id="header">
+    <h>discord webhook spammer</h>
+  </div>
+
+  <div id="container">
+    <div class="center-align">
+      
+      <p>Webhook Link (channel):</p>
+      <input type="text" id="link" placeholder="paste webhook url here" />
+
+      <p>Bot Username (optional):</p>
+      <input type="text" id="username" placeholder="username for webhook" value="ZuaWebhookSender" />
+
+      <p>Image URL (or upload below):</p>
+      <input type="text" id="avatarUrl" placeholder="paste image url" />
+
+      <p>Or upload an image:</p>
+      <input type="file" id="imageUpload" accept="image/*" />
+
+      <p>Content (message):</p>
+      <input type="text" id="content" placeholder="message content here" />
+
+      <p>Spam count:</p>
+      <input type="number" id="count" placeholder="how many times?" min="1" value="1" />
+
+      <br />
+      <button id="btn">Send Spam</button>
+
+      <center>
+        <p id="log"></p>
+      </center>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    Copyright &copy; <a href="http://github.com/thatziv/">Zua</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
