@@ -1,8 +1,3 @@
-/*  
-  Project by Zua  
-  https://github.com/thatziv/webhook  
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
@@ -50,8 +45,7 @@ p {
 }
 
 input[type="text"],
-input[type="number"],
-input[type="file"] {
+input[type="number"] {
   width: 100%;
   padding: 14px 18px;
   margin-bottom: 18px;
@@ -66,12 +60,34 @@ input[type="file"] {
 }
 
 input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="file"]:focus {
+input[type="number"]:focus {
   border-color: #2aff00;
   box-shadow: 0 0 8px #2aff00;
   background: #1a1a1a;
   color: #d4ff8f;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 14px 24px;
+  margin-bottom: 18px;
+  background-color: #111;
+  color: #b1ff8a;
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 8px #2aff00;
+}
+
+.custom-file-upload input {
+  display: none;
 }
 
 #btn {
